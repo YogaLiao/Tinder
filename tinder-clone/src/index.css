@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
-html {
+html body{
   margin: 0;
   padding: 0
 }
@@ -13,14 +13,14 @@ html {
   color:#fff;
   text-transform: uppercase;
   font-size: 15px;
-  background-color: #e5989b;
+  background-color: #f72585;
   padding: 12px 30px;
   border-radius: 30px;
   border: none;
 }
 
 .primary-button:hover {
-  background-color: #e56b6f;
+  background-color: #ef233c;
 }
 
 body {
@@ -29,3 +29,59 @@ body {
 
 /* ----- NavBar --- */
 
+nav {
+  width: 100%;
+  display:flex;
+  justify-content: space-between
+}
+
+nav .nav-button {
+  color: #f15bb5;
+  background: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  margin: 20px;
+}
+
+nav .nav-button:disabled {
+  background: rgb(189, 180, 180);
+  color: #f72585
+}
+
+nav .logo-container {
+  width: 170px;
+  margin: 15px
+}
+
+nav .logo-container .logo {
+  width: 100%
+}
+
+/* ----Home------ */
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: linear-gradient(
+              to bottom,
+              rgba(0,0,0,0.65) 0%,
+              rgba(0,0,0,0) 100%
+  );
+}
+
+
+
+/* -----Auth Modal ------ */
+.auth-modal {
+  /* position: absolute; */
+  top: 175px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 360px;
+  height: 600px;
+  background: white;
+  border-radius: 10px;
+  padding: 40px;
+}
