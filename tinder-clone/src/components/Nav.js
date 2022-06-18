@@ -3,9 +3,10 @@ import colorlogo from "../images/tinder_transparent.png"
 
 import React from 'react'
 
-function Nav({ minimal, authToken, setShowModal, showModal }) {
+function Nav({ minimal, authToken, setShowModal, showModal, setIsSignUp }) {
     const handleClick = () => {
-        setShowModal(true)
+      setShowModal(true)
+      setIsSignUp(false)
     }
     return (
       <nav>
